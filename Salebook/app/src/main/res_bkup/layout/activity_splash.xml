@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@android:color/holo_blue_dark"
+              tools:context="com.metrosoft.arafat.salebook.activity.SplashActivity"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:layout_gravity="center|center_vertical|center_horizontal"
+              android:padding="10dp"
+              android:weightSum="1"
+              >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="@dimen/btn_elev"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anim_pipe"
+        android:visibility="visible"
+        android:padding="@dimen/fab_margin"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:src="@drawable/splash"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/txt_loading"
+        android:paddingTop="@dimen/btn_elev"
+        android:text="Loading ..."
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:padding="@dimen/btn_elev">
+
+
+    </RelativeLayout>
+
+</LinearLayout>

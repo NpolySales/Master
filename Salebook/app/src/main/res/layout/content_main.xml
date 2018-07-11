@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+
+                android:paddingTop="@dimen/activity_vertical_margin"
+
+                android:textAlignment="center"
+                android:textColor="@color/azure"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.metrosoft.arafat.salebook.activity.MainActivity"
+                tools:showIn="@layout/app_bar_main">
+
+
+    <AutoCompleteTextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/party_list"
+        android:padding="@dimen/fab_margin"
+        android:hint="Input Party Code"
+        android:textColor="@color/white"
+        android:gravity="center|center_horizontal"
+        android:inputType="number"
+
+        android:foregroundGravity="center"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/fab_scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp">
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <Spinner
+        android:id="@+id/customer"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:filterTouchesWhenObscured="true"
+        android:hapticFeedbackEnabled="true"
+        android:soundEffectsEnabled="true"
+        android:spinnerMode="dialog"
+        android:textSize="12sp"
+        android:visibility="gone"
+        tools:ignore="UnusedAttribute" />
+    <TextView
+        android:id="@+id/select_party"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/fab_margin"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:ems="10"
+
+        android:text="@string/party_select_text"
+        tools:ignore="RtlHardcoded,RtlSymmetry,SpUsage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/party_dtls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:background="@color/bg_pink"
+        android:gravity="center"
+        android:padding="@dimen/fab_margin"
+        android:text="@string/party_dtls"
+        android:textColor="@color/white"
+        tools:ignore="RtlHardcoded,RtlSymmetry"
+        android:layout_below="@+id/party_list"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/genre"
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingBottom="@dimen/genre"
+
+
+        android:background="@color/bg_main"
+
+        tools:ignore="RtlHardcoded,UnusedAttribute,UselessLeaf"
+        android:id="@+id/party_info_layout"
+        android:layout_below="@+id/party_dtls"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/cust_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Custoemr ID"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/cust_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:text="customername"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/cust_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:text="customer phone"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/cust_sale_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:text="Sales Type"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/cust_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:inputType="textMultiLine"
+            android:text="Custoemr Addresss"
+            tools:ignore="HardcodedText,TextViewEdits" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/chart_layout"
+        android:layout_above="@+id/chart_btn"
+        android:layout_toRightOf="@+id/customer"
+        android:layout_toEndOf="@+id/customer"
+        android:layout_marginBottom="17dp"
+        tools:ignore="RtlHardcoded">
+
+        <Button
+            android:id="@+id/targetChart"
+            android:layout_width="@dimen/btn_round"
+            android:layout_height="@dimen/btn_round"
+            android:background="@drawable/chart_btn"
+            android:elevation="@dimen/btn_elev"
+            android:padding="@dimen/btn_txt_gap"
+            android:text="10%"
+            android:textColor="@color/white"
+            tools:ignore="ButtonStyle,HardcodedText,UnusedAttribute" />
+
+        <Button
+            android:id="@+id/achiveChart"
+            android:layout_width="@dimen/btn_round"
+            android:layout_height="@dimen/btn_round"
+            android:elevation="@dimen/btn_elev"
+            android:textColor="@color/white"
+            android:text="10%"
+            android:padding="@dimen/btn_txt_gap"
+            android:background = "@drawable/chart_btn"
+            tools:ignore="ButtonStyle,HardcodedText,UnusedAttribute" />
+
+        <Button
+            android:id="@+id/saleChart"
+            android:elevation="@dimen/btn_elev"
+            android:text="10%"
+            android:padding="@dimen/btn_txt_gap"
+            android:textColor="@color/white"
+            android:background = "@drawable/chart_btn"
+            android:layout_width="@dimen/btn_round"
+            android:layout_height="@dimen/btn_round"
+            tools:ignore="ButtonStyle,HardcodedText,UnusedAttribute" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/forestgreen"
+        android:text="@string/show_in_chart"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:id="@+id/chart_btn"
+        android:textSize="@dimen/btn_text_size"
+        android:elevation="3dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        tools:ignore="RtlHardcoded,SpUsage,UnusedAttribute" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:elevation="5dp"
+        android:src="@drawable/qrcode"
+        app:backgroundTint="@android:color/holo_orange_light"
+        app:borderWidth="1dp"
+        app:elevation="3dp"
+        app:fabSize="normal"
+
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@android:color/holo_red_dark"
+        tools:ignore="ObsoleteLayoutParam,UnusedAttribute"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/select_party"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+
+        android:src="@mipmap/checklist"
+        android:foregroundGravity="center|center_horizontal|center_vertical"
+        android:textAlignment="center"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:borderWidth="1dp"
+        app:elevation="3dp"
+        app:fabSize="normal"
+
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@android:color/holo_green_light"
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded,UnusedAttribute"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/fab_scan"
+        android:layout_alignStart="@+id/fab_scan"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/btn_elev"
+
+    tools:context="com.metrosoft.arafat.salebook.activity.ProductMain"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center"
+            android:text="@string/title_menu_household"
+            android:drawableLeft="@drawable/household_small"
+            android:textColor="@color/white"
+            android:id="@+id/householdtext"
+            android:background="@color/colorPrimaryDark"
+            tools:targetApi="m"
+            tools:ignore="RtlHardcoded" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/householdtext"
+            android:layout_gravity="center"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center"
+            android:text="@string/title_menu_furnituer"
+            android:drawableLeft="@drawable/furniture_small"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:id="@+id/furnitureText"
+            tools:targetApi="m"
+            tools:ignore="RtlHardcoded" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/furnitureview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/furnitureText"
+            android:scrollbars="horizontal"
+            android:layout_gravity="center"
+
+            tools:ignore="ObsoleteLayoutParam" />
+<!--- No need -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center"
+            android:text="@string/title_menu_fittings"
+            android:drawableLeft="@drawable/fitting_small"
+          android:background="@color/yellow"
+            android:textColor="@color/white"
+android:visibility="gone"
+            android:layout_below="@+id/furnitureview"
+            android:id="@+id/fittings"
+            tools:targetApi="m"
+            tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fittingsview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/catMenuHeight"
+            android:layout_gravity="center"
+            android:layout_below="@id/fittings"
+            android:visibility="gone"
+            android:scrollbars="horizontal"
+            tools:ignore="ObsoleteLayoutParam" />
+
+    </LinearLayout>
+</RelativeLayout>

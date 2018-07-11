@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/activity_bg"
+              android:layout_width="match_parent"
+              android:textAlignment="center"
+            android:layout_marginTop="@dimen/fab_margin"
+              android:layout_marginBottom="@dimen/fab_margin"
+              android:layout_gravity="center_vertical|center_horizontal"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRed"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:padding="@dimen/fab_margin"
+        android:src="@drawable/ic_action_warning"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editdialogtitle"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:text="Change Quantity or Price?"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editinst"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:text="Please Input the Quantity Or Price rate for"
+        />
+
+    <TextView
+        android:id="@+id/editpcode"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorRed"
+        android:padding="@dimen/fab_margin"
+        android:text="101.201.001"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editqnty"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/fab_margin"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_weight="0.5"
+        android:textColor="@color/white"
+        android:maxLength="4"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editprice"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/fab_margin"
+        android:hint="Price rate"
+        android:inputType="number"
+        android:layout_weight="0.5"
+        android:textColor="@color/white"
+        android:maxLength="4"
+        android:enabled="false"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">10dp</dimen>
+    <dimen name="nav_header_height">150dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="fab_margin">10dp</dimen>
+    <dimen name="h1_text">16sp</dimen>
+    <dimen name="sub_text">14sp</dimen>
+    <dimen name="p_text">12dp</dimen>
+    <dimen name="title">17dp</dimen>
+    <dimen name="rating">15dp</dimen>
+    <dimen name="genre">25dp</dimen>
+    <dimen name="year">12dp</dimen>
+    <dimen name="btn_round">60dp</dimen>
+    <dimen name="btn_elev">5dp</dimen>
+    <dimen name="btn_text_size">12dp</dimen>
+
+
+    <dimen name="prodlist_edittext">45dp</dimen>
+    <dimen name="activity_right_margin">10dp</dimen>
+    <dimen name="activity_left_margin">10dp</dimen>
+
+    <dimen name="icon_width">60dip</dimen>
+    <dimen name="icon_height">60dip</dimen>
+    <dimen name="icon_padding">4dp</dimen>
+    <dimen name="card_height">180dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="cardView">120dp</dimen>
+    <dimen name="catMenuHeight">240dp</dimen>
+    <dimen name="catMenuWidth">140dp</dimen>
+    <dimen name="btn_txt_gap">5dp</dimen>
+    <dimen name="userinput_gap">10dp</dimen>
+</resources>

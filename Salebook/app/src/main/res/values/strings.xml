@@ -1,0 +1,159 @@
+<resources>
+    <string name="app_name"><b>NPOLY sales.</b></string>
+
+    <string name="app_head"><b>NPOLY sales.</b></string>
+    <string name="party_select_text"><b>Select Party/Customer</b></string>
+    <string name="party_dtls"><b>Party/Customer Information</b></string>
+    <string name="scan_hint"><b>Scan Customers QR code</b></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="touch_suggestion">Use your finger or Pen to write here.</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="p_name">Name: Fazla Arafat.</string>
+    <string name="p_address">Moghbazar, Dhaka.</string>
+    <string name="p_age">Age: 27 Years,</string>
+    <string name="p_sex">|Sex: Male</string>
+    <string name="userid">Userid</string>
+    <string name="user_password">123456</string>
+    <string name="forget_pass"><u>Forgot password?</u></string>
+    <string name="p_last_vist"><b>|Last Visit:01-Jan-2017</b></string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="register">Register Now</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_phone">Cell phone number</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="title_activity_scan_main">ScanActivityMain</string>
+    <string name="title_menu_household">Household</string>
+    <string name="title_menu_furnituer">Furniture</string>
+    <string name="title_menu_fittings">Fittings</string>
+    <string name="test_cellphone"></string>
+    <string name="chart_heading">Showing Statistical Data</string>
+    <string name="message">Message</string>
+    <string name="show_in_chart">Show in chart</string>
+
+    <string name="show_mon_sale">Monthly Sales</string>
+    <string name="show_yr_sale">Yearly Sales</string>
+    <string name="show_total_sale">Yearly vs Monthly</string>
+
+    <string name="show_camera_hint"><b>Click the <u>CAMERA</u> button to snap bank/payment document</b></string>
+    <string name="camerawarn"><b>No Document Attached! Press <u>CAMERA</u> button</b></string>
+    <string name="show_additional_input"><b>Please fill the below fields carefully.</b></string>
+    <string name="order_type_hint"><b>Please fill the below fields carefully.</b></string>
+
+    <string name="order_sheet_warn_bn"><b>বি: দ্র: </b>কোম্পনীর কোন প্রতিনিধির সাথে কোন অবস্থাতেই নগদ বা ক্যাশ টাকার লেনদেন করবেন না। নগদ টাকা লেনদেনের ফলে কোন প্রকার সমস্যা সৃষ্টি হলে কোম্পানী কোন প্রকার দ্বায় দায়িত্ব গ্রহণ করবে না।
+    কোম্পানীর নামে ডি.ডি, টি.টি, এম.টি, পে-অর্ডার এবং চেকই একমাত্র বৈধ লেনদেন বলে গন্য হবে। উক্ত নিয়ম ব্যাতীত অন্য কোন উপায়ে সংগঠিত কোন লেনদেনই কোম্পানীর নিকট বৈধ বলে গন্য হবে না।</string>
+    <string name="order_warn_en">N.B : It is strictly prohibited for All party/customer to deal with company selected vendor with CASH. If any circumstances arise, Company will not take any kinds of liabilities.
+    Only D.D, T.T, M.T, pay-order and cheque treated as legal transaction method(s). Without these, if any transaction occurred Company will denied this with guilty of rules and regulation violence.    </string>
+    <string name="furniture">Furniture</string>
+    <string name="household">Household</string>
+    <string name="select_order_type">Select Order Type</string>
+    <string name="CopyRight">\u00A9 NPOLY</string>
+    <string name="dis">discnt</string>
+    <string name="net">netRate</string>
+    <string name="p_price">P.price</string>
+
+    <string name="uom">UOM</string>
+    <string name="pipes">Pipes</string>
+    <string name="doors">Doors</string>
+    <string name="select_bank">Select Bank</string>
+    <string name="select_transport_method">Select Transport Method</string>
+    <string name="select_warehouse">Select Warehouse</string>
+    <string name="accessibility_description">USSD :If your SIM dose not allow to share its Number</string>
+    <string name="ceillings">Ceillings</string>
+    <string name="tubewell">Tubewell</string>
+    <string name="pipes_and_fittings">Pipes and Fittings</string>
+    <string name="doors_1">Doors</string>
+    <string name="ceilings">Ceilings</string>
+    <string name="tubewells">Tubewells</string>
+    <string name="powered_by">Powered by</string>
+
+
+    <string name="todo">TODO</string>
+
+    <string name="it_amp_mis"><![CDATA[IT & MIS]]></string>
+    <string name="qnty_price">qnty - price</string>
+    <string name="price">Price</string>
+    <string name="qnty">Qnty:</string>
+    <string name="zeroratio">0.00</string>
+    <string name="zero">00</string>
+    <string name="order_total">Order Total:</string>
+    <string name="total">total</string>
+
+    <string-array name="mop_array">
+        <item>Select Mode Of Payment</item>
+        <item>Credit</item>
+        <item>D.D</item>
+        <item>T.T</item>
+        <item>M.T</item>
+        <item>Pay-Order</item>
+        <item>Cheque</item>
+        <item>Cash Deposit</item>
+
+        <item>Others</item>
+
+    </string-array>
+    <string-array name="transport_array">
+        <item>Select Transport Method</item>
+        <item>Company</item>
+        <item>Party</item>
+    </string-array>
+    <string-array name="warehouse_array">
+        <item>Select Warehouse</item>
+        <item>NFAL factory</item>
+        <item>Chittagong</item>
+        <item>Bogora</item>
+        <item>Tekerhat</item>
+        <item>NPIL factory</item>
+        <item>Shingbari</item>
+    </string-array>
+    <string-array name="banks_array">
+        <item>	Select Bank	</item>
+        <item>	AB Bank Ltd.	</item>
+        <item>	Agrani Bank Ltd.	</item>
+        <item>	Bank Asia Ltd.	</item>
+        <item>	Brac Bank Ltd.	</item>
+        <item>	City Bank Ltd.	</item>
+        <item>	Dhaka Bank Ltd. 	</item>
+        <item>	Dutch Bangla Bank Ltd.	</item>
+        <item>	Eastern Bank Ltd.	</item>
+        <item>	IFIC Bank Ltd.	</item>
+        <item>	Islami Bank Bangladesh Ltd.	</item>
+        <item>	Jamuna Bank Ltd.	</item>
+        <item>	Janata Bank Ltd.	</item>
+        <item>	Mutual Trust Bank Ltd.	</item>
+        <item>	National Bank Ltd.	</item>
+        <item>	One Bank Ltd. 	</item>
+        <item>	Premier Bank Ltd.	</item>
+        <item>	Prime Bank Ltd.	</item>
+        <item>	Pubali Bank Ltd.	</item>
+        <item>	Shahjalal Islami Bank Ltd.	</item>
+        <item>	Sonali Bank Ltd.	</item>
+        <item>	Standard Bank Ltd.	</item>
+        <item>	Standard Chartered Bank 	</item>
+        <item>	United Commercial Bank Ltd. 	</item>
+        <item>	Uttara Bank Ltd. 	</item>
+
+    </string-array>
+
+</resources>

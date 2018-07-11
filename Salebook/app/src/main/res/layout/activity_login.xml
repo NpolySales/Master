@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@drawable/bg_login"
+
+              android:id="@+id/loginlayout"
+
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:weightSum="1"
+              tools:ignore="UnusedAttribute">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/btn_elev"
+        android:src="@drawable/splash"
+        android:id="@+id/comp_logo"
+        android:contentDescription="@string/todo"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/hint_phone"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:text="@string/test_cellphone"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_security"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:text="@string/user_password"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            tools:ignore="Deprecated" />
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/circle_btn"
+            android:elevation="5dp"
+            android:text="@string/fa_icon_login"
+            android:textColor="@color/colorRed"
+            android:textSize="30dp"
+            tools:ignore="SpUsage" />
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_action_user"
+            android:text="@string/btn_link_to_register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="@string/powered_by"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:text="@string/it_amp_mis"
+        />
+    <ImageView
+        android:layout_gravity="bottom|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:src="@drawable/salebooklogo"
+        android:backgroundTint="@color/colorAccent"
+        android:tooltipText="salebook"
+
+        />
+
+
+</LinearLayout>

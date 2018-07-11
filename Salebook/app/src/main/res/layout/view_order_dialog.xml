@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_dialog_layout_design_user_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:layout_insetEdge="top"
+    android:baselineAligned="true"
+
+    android:orientation="vertical"
+    android:background="@drawable/borderbackground"
+    android:padding="11dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       android:src="@drawable/ic_action_warning"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:layout_gravity="center"
+        android:text="Dialog Title"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/dialogMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/message"
+
+
+        tools:ignore="HardcodedText" />
+    <!-- Radio group action -->
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/btn_elev"
+        android:visibility="gone"
+        android:inputType="number"
+        android:hint="Input D.O Number"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+
+    <EditText
+        android:id="@+id/FrmDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/btn_elev"
+        android:inputType="date"
+        android:layout_weight="0.5"
+        android:hint="From date"
+        />
+    <EditText
+        android:id="@+id/ToDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/btn_elev"
+        android:inputType="date"
+        android:hint="To Date"
+        />
+    </LinearLayout>
+</LinearLayout>

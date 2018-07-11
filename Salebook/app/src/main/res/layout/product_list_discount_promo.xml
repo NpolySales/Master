@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center|center_horizontal"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/discounticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:foregroundGravity="center"
+        android:background="@color/white"
+        android:padding="@dimen/fab_margin"
+        android:src="@drawable/ic_edit"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fab_margin"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_below="@+id/discounticon"
+        android:id="@+id/title_head"
+        android:text="Apply Discount for All items"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:id="@+id/instract"
+        android:layout_below="@+id/title_head"
+        android:textSize="10dp"
+        android:text="Please input discount"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/bg_register"
+        android:background="@color/white"
+        android:padding="@dimen/fab_margin"
+        android:visibility="gone"
+        android:id="@+id/ProdCode"
+        android:layout_below="@+id/instract"
+        android:textSize="14dp"
+        android:text="product code"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+
+        android:padding="@dimen/fab_margin"
+        android:layout_below="@id/ProdCode"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/prodDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Discount"
+
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Program Price"
+            android:id="@+id/ProgramPrice"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:enabled="false"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

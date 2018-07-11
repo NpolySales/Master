@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_icon_areachart">&#xf1fe;</string>
+    <string name="fa_icon_piechart">&#xf200;</string>
+    <string name="fa_icon_linechart">&#xf201;</string>
+    <string name="fa_icon_login">&#xf090;</string>
+    <string name="fa_icon_book">&#xf02d;</string>
+
+    <string name="fa_barcode">&#xf02a;</string>
+    <string name="fa_bell">&#xf0f3;</string>
+    <string name="fa_bell_o">&#xf0a2;</string>
+    <string name="fa_camera">&#xf030;</string>
+</resources>

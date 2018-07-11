@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:id="@+id/touch_canvas"
+tools:context="com.metrosoft.arafat.salebook.activity.MainActivity">
+
+
+
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_centerHorizontal="true">
+
+    <com.metrosoft.arafat.salebook.activity.TouchView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+
+</FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_above="@id/album_id"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAlignment="center"
+            android:text="Oder Number"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Oder date"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Party code"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+ 
+    <!-- Album id / Hidden by default -->
+    <TextView
+        android:id="@+id/album_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <!-- Album Name -->
+    <TextView
+        android:id="@+id/album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingTop="20dip"
+        android:paddingBottom="15dip"
+        android:paddingStart="10dip"
+        android:textStyle="bold"/>
+
+    <!-- Album date -->
+    <TextView
+        android:id="@+id/order_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="order date"
+        android:paddingBottom="20dip"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:paddingStart="10dip"
+        android:paddingTop="15dip"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- Album date -->
+    <TextView
+        android:id="@+id/party_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/order_date"
+        android:hint="party code"
+        android:paddingBottom="20dip"
+        android:paddingLeft="3dip"
+        android:paddingEnd="10dip"
+        android:paddingStart="10dip"
+        android:visibility="gone"
+        android:paddingTop="15dip"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <!-- Album Songs count -->
+    <TextView android:id="@+id/songs_count"
+        android:layout_width="30sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:background="@color/colorRed"
+        android:paddingBottom="15dip"
+        android:paddingTop="20dip"
+        android:paddingRight="3dip"
+        android:paddingLeft="3dip"/>
+    
+
+</RelativeLayout>

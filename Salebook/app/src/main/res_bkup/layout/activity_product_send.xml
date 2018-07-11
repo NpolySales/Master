@@ -1,0 +1,82 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:context="com.metrosoft.arafat.salebook.activity.ProductSend"
+android:background="#ccddff" >
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/porduct_send_headbar"
+        ></include>
+
+
+
+
+
+    <ListView
+        android:id="@+id/listitems"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="35dp">
+    </ListView>
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:onClick="delOrder"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_delete"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:borderWidth="1dp"
+        app:elevation="3dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@android:color/holo_red_dark" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_doc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:onClick="createPdf"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_action_document"
+        app:backgroundTint="@android:color/white"
+        app:borderWidth="1dp"
+        app:elevation="3dp"
+
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@android:color/holo_red_dark" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@drawable/fab"
+        android:onClick="startSendingOrder"
+        android:src="@drawable/ic_menu_send"
+        app:backgroundTint="@android:color/holo_green_light"
+        app:borderWidth="1dp"
+        app:elevation="3dp"
+        app:fabSize="normal"
+
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@android:color/holo_orange_light"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

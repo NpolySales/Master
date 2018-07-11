@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_dialog_layout_design_user_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:layout_insetEdge="top"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    android:background="@drawable/borderbackground"
+    android:padding="11dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_pie_chart"
+        tools:ignore="ContentDescription"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/btn_elev"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Select Report Type"
+        android:textColor="@color/white"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:id="@+id/rep_radiogroup"
+        android:layout_weight="1">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:text="DO Reports"
+            android:id="@+id/rep_do"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rep_sales"
+            android:layout_width="match_parent"
+            android:text="Sales Reports"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rep_coll"
+            android:layout_width="match_parent"
+            android:text="Collection Reports"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rep_do_col"
+            android:layout_width="match_parent"
+            android:text="DO vs Collection"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/btn_elev"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/FrmDt"
+            android:layout_weight="1"
+            android:inputType="date"
+            android:hint="From Date"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ToDt"
+            android:layout_weight="1"
+            android:hint="To Date"
+            android:inputType="date"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

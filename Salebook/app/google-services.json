@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "153738936939",
+    "firebase_url": "https://salebookpush.firebaseio.com",
+    "project_id": "salebookpush",
+    "storage_bucket": "salebookpush.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153738936939:android:4fd80957943d071d",
+        "android_client_info": {
+          "package_name": "com.metrosoft.arafat.salebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153738936939-e3a9t9sh2gl0bok8eq7p4fp2ri6k7p8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHcOMlVk-ghvPYW8UC-cObHlROmI4M7Sw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

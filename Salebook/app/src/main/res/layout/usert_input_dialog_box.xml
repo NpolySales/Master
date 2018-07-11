@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_dialog_layout_design_user_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    app:layout_insetEdge="top"
+    android:baselineAligned="true"
+
+    android:orientation="vertical"
+    android:background="@drawable/borderbackground"
+    android:padding="11dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       android:src="@drawable/ic_action_warning"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:layout_gravity="center"
+        android:text="Dialog Title"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" />
+    <!-- Radio group action -->
+    <TextView
+        android:text="@string/select_order_type"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/radiohint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/radiogroup"
+            android:layout_weight="1">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:text="@string/household"
+                android:id="@+id/hh"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/fur"
+                android:layout_width="match_parent"
+                android:text="@string/furniture"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/radiogroupNPIL"
+        android:layout_weight="1">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:text="@string/pipes"
+            android:id="@+id/cat_pipe"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/cat_door"
+            android:layout_width="match_parent"
+            android:text="@string/doors"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/cat_ceil"
+            android:layout_width="match_parent"
+            android:text="@string/ceillings"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/cat_tube"
+            android:layout_width="match_parent"
+            android:text="@string/tubewell"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+
+
+
+
+    <TextView
+        android:id="@+id/camera_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_camera_hint"
+        android:textColor="@color/azure"
+        android:textSize="10sp"
+        android:visibility="gone"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:gravity="center"
+        tools:ignore="SmallSp" />
+    <TextView
+        android:id="@+id/order_type_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/order_type_hint"
+        android:textColor="@color/azure"
+        android:textSize="10sp"
+        android:visibility="gone"
+        android:gravity="center"
+        tools:ignore="SmallSp" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/userInput_shipto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/btn_elev"
+        android:paddingTop="10dp"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:gravity="center|fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Shipment Adress"
+        android:visibility="gone"
+        android:inputType="text"
+        tools:ignore="HardcodedText"  >
+    </AutoCompleteTextView>
+
+    <AutoCompleteTextView
+        android:id="@+id/userInput_payto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/btn_elev"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:gravity="center|fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Billing Address"
+        android:visibility="gone"
+        android:inputType="text"
+        tools:ignore="HardcodedText" >
+</AutoCompleteTextView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <AutoCompleteTextView
+        android:id="@+id/order_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/btn_elev"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:gravity="start|fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Order Type"
+        android:visibility="gone"
+        android:inputType="text"
+        tools:ignore="HardcodedText" >
+    </AutoCompleteTextView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/userinput_gap" />
+    <AutoCompleteTextView
+        android:id="@+id/price_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/btn_elev"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:gravity="start|fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Price List"
+        android:visibility="gone"
+        android:inputType="text"
+        tools:ignore="HardcodedText" >
+    </AutoCompleteTextView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <EditText
+        android:id="@+id/new_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Delivery Address"
+        android:inputType="text"
+        tools:ignore="HardcodedText"/>
+    <EditText
+        android:id="@+id/discount_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="0"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Discount"
+
+        android:inputType="text"
+        tools:ignore="HardcodedText"/>
+
+    <Spinner
+        android:id="@+id/mode_of_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:entries="@array/mop_array"
+        android:gravity="center"
+        android:visibility="visible"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Mode of Payment"
+
+        android:inputType="text"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:layout_width="13dp"
+        android:layout_height="wrap_content"
+        android:text="@string/select_bank"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:visibility="gone"/>
+    <Spinner
+        android:id="@+id/bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:entries="@array/banks_array"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Bank Name "
+
+        android:inputType="text"
+        tools:ignore="HardcodedText"/>
+    <EditText
+        android:id="@+id/bank_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+
+        android:gravity="center"
+        android:visibility="visible"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Bank cheque Number"
+
+        android:inputType="text"
+        tools:ignore="HardcodedText"/>
+    <EditText
+        android:id="@+id/cheque_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:focusable="false"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Cheque Date"
+        android:inputType="date"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/deli_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:focusable="false"
+        android:gravity="center"
+        android:visibility="visible"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Delivery Date"
+
+        android:inputType="date"
+        tools:ignore="HardcodedText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:text="@string/select_transport_method"
+        android:textStyle="normal"
+        android:visibility="gone"
+        android:textSize="12sp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/transport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:entries="@array/transport_array"
+        android:gravity="center"
+        android:visibility="visible"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Transport"
+
+        android:inputType="text"
+        tools:ignore="HardcodedText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:text="@string/select_warehouse"
+        android:textStyle="normal"
+        android:visibility="gone"
+        android:textSize="12sp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/warehouse"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:entries="@array/warehouse_array"
+        android:gravity="center"
+        android:visibility="visible"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Warehouse"
+
+        android:inputType="text"
+        tools:ignore="HardcodedText"/>
+
+
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/btn_elev"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Terms/Condition"
+        android:inputType="text"
+        tools:ignore="HardcodedText" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/userinput_gap"  />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/btn_elev"
+        android:paddingBottom="@dimen/fab_margin"
+        android:layout_gravity="center"
+        android:textColor="@color/azure"
+        android:id="@+id/dialogMsg"
+        android:textAlignment="center"
+        android:text="Dialog Message"
+        android:textSize="10sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:ignore="HardcodedText,SmallSp" />
+
+    <ImageButton
+        android:id="@+id/btncamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dip"
+        android:background = "@drawable/circle_btn"
+        android:src="@drawable/ic_menu_camera"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:foregroundGravity="center"
+        android:padding="@dimen/fab_margin"
+        android:elevation="5dp"
+        android:textSize="30dp"
+        tools:ignore="ContentDescription,SpUsage,UnusedAttribute" />
+
+
+    <ImageView
+        android:id="@+id/attachment"
+        android:padding="@dimen/btn_elev"
+        android:layout_gravity="center_vertical|center_horizontal|clip_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/camra_warn"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:animation="@anim/shake"
+        android:layout_width="match_parent"
+        android:text="@string/camerawarn"
+        android:visibility="gone"
+        android:textSize="10sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_height="wrap_content" />
+</LinearLayout>

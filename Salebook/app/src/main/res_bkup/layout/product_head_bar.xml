@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    app:titleTextColor="@color/azure"
+    android:elevation="3dp"
+
+
+    android:textAlignment="center"
+    android:outlineProvider="bounds"
+    tools:ignore="UnusedAttribute">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingEnd="@dimen/btn_elev"
+            android:paddingRight="@dimen/btn_elev"
+            android:text="ID"
+            android:textAlignment="center"
+            android:textColor="@color/azure"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="@dimen/btn_elev"
+            android:paddingRight="@dimen/btn_elev"
+            android:text="UOM"
+            android:textColor="@color/azure"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/btn_elev"
+            android:paddingRight="@dimen/btn_elev"
+            android:text="Qnty"
+            android:textColor="@color/azure"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingLeft="@dimen/btn_elev"
+            android:paddingRight="@dimen/btn_elev"
+            android:text="Rate"
+            android:textColor="@color/azure"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingLeft="@dimen/btn_elev"
+            android:paddingRight="@dimen/btn_elev"
+            android:text="Discount"
+            android:textColor="@color/azure"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingLeft="@dimen/btn_elev"
+            android:paddingRight="@dimen/btn_elev"
+            android:text="Net"
+            android:textColor="@color/azure"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingLeft="@dimen/btn_elev"
+            android:paddingRight="@dimen/btn_elev"
+            android:text="Prog"
+            android:textColor="@color/azure"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingLeft="@dimen/btn_elev"
+            android:paddingRight="@dimen/btn_elev"
+            android:text="Total"
+            android:textColor="@color/azure"
+            tools:ignore="HardcodedText"/>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

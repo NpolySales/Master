@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Album id / Hidden by default -->
+    <TextView
+        android:id="@+id/album_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Song id / Hidden by default -->
+    <TextView
+        android:id="@+id/song_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <!-- Track serial no -->
+    <TextView
+        android:id="@+id/track_no"
+        android:layout_width="35dp"
+        android:background="@color/bg_pink"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dip"
+        android:paddingStart="5dip"
+        android:paddingTop="15dip"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Song Name -->
+    <TextView
+        android:id="@+id/album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ellipsize="none"
+        android:maxLines="70"
+        android:scrollHorizontally="false"
+        android:paddingBottom="15dip"
+        android:paddingStart="5dip"
+        android:paddingTop="15dip"
+        android:textColor="#000000"
+        android:layout_toStartOf="@id/song_duration"
+        android:textSize="14sp"
+        android:layout_toEndOf="@+id/track_no"/>
+
+    <!-- Song duration -->
+    <TextView
+        android:id="@+id/song_duration"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="15dip"
+        android:paddingStart="5dip"
+        android:textAlignment="center"
+        android:paddingTop="15dip"
+        android:hint="@string/qnty_price"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
